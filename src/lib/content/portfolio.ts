@@ -25,7 +25,7 @@ export const seoData = {
     'Aditya Singh is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
   image:
-    'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
+    'https://i.ibb.co/M80Vk38/Screenshot-from-2024-02-06-11-58-27.png',
   url: 'https://konhito.vercel.app/',
   keywords: [
     'aditya',
