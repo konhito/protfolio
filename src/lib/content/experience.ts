@@ -1,33 +1,46 @@
-import { ExperienceSectionType } from '@/lib/types/sections';
+import { ExperienceSectionType } from "@/lib/types/sections";
 
 export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
-      company: 'Fiverr',
-      companyUrl: 'https://www.fiverr.com/users/jay_won2/',
-      role: 'freelancer',
-      started: 'july 2023',
-      upto: 'present',
+      company: "PackCone",
+      companyUrl: "https://packcone.com/",
+      role: "Full-Stack developer",
+      started: "Dec 2024",
+      upto: "Feb 2024",
       tasks: [
-        'Implemented UI components with React & Next.js, TypeScript & Tailwind CSS.',
-        'Developed and maintained design systems that separates design logic.',
-        'Understanding client needs and proposing effective solutions, which also involves strategising and planning.',
-        'Lead a cross-functional team of developers and designers in the creation of a SaaS product.',
+        "Built the complete PackCone website using Next.js, TypeScript & TailwindCSS.",
+        "Built a trading platform using the TradingView library.",
+        "Collaborated with a diverse nationwide team of developers.",
       ],
     },
     {
-      company: 'Upwork',
-      companyUrl: 'https://www.upwork.com/freelancers/~018ae7e931d02076f5',
-      role: 'Wordpress expert',
-      started: 'april 2023',
-      upto: 'july 2023',
+      company: "Fiverr",
+      companyUrl: "https://www.fiverr.com/",
+      role: "freelancer",
+      started: "july 2023",
+      upto: "present",
       tasks: [
-        'Built trading platform using TradingView library.',
-        'Designed SHMTH Capital website with Next.js, TypeScript & TailwindCSS.',
-        'Collaborated with diverse nationwide team of developers.',
+        "Built complete websites and SaaS products using React, Next.js, TypeScript, and Tailwind CSS.",
+        "Developed and maintained scalable design systems to streamline UI development.",
+        "Worked closely with clients to understand their needs and deliver tailored solutions.",
+        "Led a cross-functional team of developers and designers to successfully launch projects.",
       ],
     },
+    {
+      company: "admission-hub",
+      companyUrl: "https://last-admission-hub.vercel.app/",
+      role: "freelancer",
+      started: "jan 2025",
+      upto: "present",
+      tasks: [
+        "Built trading platform using TradingView library.",
+        "Designed SHMTH Capital website with Next.js, TypeScript & TailwindCSS.",
+        "Collaborated with diverse nationwide team of developers.",
+      ],
+    },
+
     // {
     //     company: 'webnetics',
     //     companyUrl: 'https://webnetic.vercel.app/',
