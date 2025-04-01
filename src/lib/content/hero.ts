@@ -6,7 +6,7 @@ export const heroSection: HeroSectionType = {
   title: "Aditya Singh.",
   tagline: "I create visually pleasing interfaces for the web.",
   description:
-    "I'm a passionate Full-Stack web developer having an experience of web applications with React.js & Next.js with TypeScript & TailwindCSS and UI/UX designing.",
+    "I develop open-source full-stack apps/tools and occasionally take on freelance projects.",
   specialText: "Currently available for a job & freelance",
   cta: {
     title: "see my resume",

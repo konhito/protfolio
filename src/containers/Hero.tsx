@@ -2,7 +2,9 @@
 import { heroSection } from "@/lib/content/hero";
 import useWindowWidth from "@/lib/hooks/use-window-width";
 import { getBreakpointsWidth } from "@/lib/utils/helper";
-
+import { Github, Instagram, Twitter } from "lucide-react";
+import { ChevronRight, MailPlus, MouseIcon, Terminal } from "lucide-react";
+import CopyCmd from "@/components/CopyCmd";
 import { Button, Wrapper } from "@/components";
 
 import { slideUp } from "@/styles/animations";
@@ -66,7 +68,50 @@ const Hero = () => {
         animate="show"
         className="max-w-xl text-base md:text-lg"
       >
-        {description}
+        <p className="text-sm lg:text-lg font-medium leading-relaxed tracking-wide text-slate-600 dark:text-slate-400">
+          I develop open-source{" "}
+          <span className="text-accent uppercase font-bold relative inline-block">
+            full-stack
+            <span className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-500/20"></span>
+          </span>{" "}
+          applications and occasionally take on{" "}
+          <span className="text-accent uppercase font-bold relative inline-block">
+            freelance
+            <span className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-500/20"></span>
+          </span>{" "}
+          projects.
+        </p>
+        {/* here icons */}
+        <div className="flex items-center pt-5 gap-3 lg:gap-6 flex-wrap">
+          <a
+            href="https://github.com/konhito"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
+          </a>
+          <a
+            href="https://twitter.com/codewithaddy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
+          </a>
+          <a
+            href="mailto:konhito0@gmail.com?body=Hello"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MailPlus className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
+          </a>
+          <a
+            href="https://instagram.com/konhit0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram className=" h-6 lg:h-10 w-8 lg:w-8 duration-200 hover:-translate-y-2 cursor-pointer" />
+          </a>
+        </div>
       </motion.p>
 
       <motion.p
