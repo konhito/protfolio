@@ -1,20 +1,21 @@
-'use client';
-import { heroSection } from '@/lib/content/hero';
-import useWindowWidth from '@/lib/hooks/use-window-width';
-import { getBreakpointsWidth } from '@/lib/utils/helper';
+"use client";
+import { heroSection } from "@/lib/content/hero";
+import useWindowWidth from "@/lib/hooks/use-window-width";
+import { getBreakpointsWidth } from "@/lib/utils/helper";
 
-import { Button, Wrapper } from '@/components';
+import { Button, Wrapper } from "@/components";
 
-import { slideUp } from '@/styles/animations';
+import { slideUp } from "@/styles/animations";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import TypingAnimation from "@/components/TypingAnimation";
 
 const Hero = () => {
   const { cta, subtitle, title, tagline, description, specialText } =
     heroSection;
 
   const windowWidth = useWindowWidth();
-  const md = getBreakpointsWidth('md');
+  const md = getBreakpointsWidth("md");
   const DEFAULT_ANIMATION_DELAY = windowWidth <= md ? 0.9 : 1.7;
 
   const getAnimationDelay = (i: number, increment = 0.15) =>
@@ -49,7 +50,13 @@ const Hero = () => {
           animate="show"
           className="leading-[1.2]"
         >
-          {tagline}
+          <h1 className="font-heading flex items-center gap-3 lg:text-3xl">
+            <span className="text-slate-600 dark:text-slate-400 tracking-normal">
+              I am
+            </span>
+            <span className="text-accent">a</span>
+            <TypingAnimation />
+          </h1>
         </motion.h1>
       </div>
 
@@ -87,9 +94,9 @@ const Hero = () => {
           variants={slideUp({ delay: getAnimationDelay(5) })}
           initial="hidden"
           animate="show"
-          href={cta?.url ?? '#'}
+          href={cta?.url ?? "#"}
           className={`mt-5 xs:mt-8 md:mt-10 ${
-            cta.hideInDesktop ? 'md:hidden' : ''
+            cta.hideInDesktop ? "md:hidden" : ""
           }`}
           sameTab={cta?.sameTab}
         >
