@@ -30,13 +30,17 @@ const Home: NextPage = () => {
       <Layout>
         <Hero />
         <About />
-        <Skills />
+        {/* <Skills /> */}
+        <section className="container mx-auto px-4 py-12">
+          <div className="max-w-4xl mx-auto">
+            <Terminalcomp />
+          </div>
+        </section>
         <FeaturedProjects />
         <Experience />
         <Projects />
         <Contact />
       </Layout>
-      
     </>
   );
 };
